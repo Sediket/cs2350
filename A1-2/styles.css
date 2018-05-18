@@ -1,0 +1,10 @@
+body {
+  background: #ccccdf;
+}
+
+.content {
+	max-width: 720px;
+	margin: auto;
+	background:white;
+	padding: 10px;
+}
