@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<!-- 
+
+Honor Code: I acknowledge that this code represents my own work: BP Date:  June 3
+
+-->
+
+<meta charset="utf-8" />
+
+<meta name="description" content="My Schedule and Form" />
+
+<meta name="keywords" content="html,form,table,tr,td,css" />
+
+<meta name="author" content="Bradley Peatross" />
+
+<title>My Schedule</title>
+
+</head>
+<body>
+
+
+
+<p class="center">
+
+My Schedule
+<br>
+All The Time
+
+</p>
+
+<body>
+ <table class="sch">
+<caption>My Schedule</caption>
+<thead>
+<tr>
+<th></th>
+<th colspan=9>Morning</th>
+<th colspan=2>Noon</th>
+<th colspan=9>Afternoon</th>
+<th colspan=10>Night</th>
+</tr>
+
+
+<tr>
+<th>Day</th>
+<th>0730</th>
+<th>0800</th>
+<th>0830</th>
+<th>0900</th>
+<th>0930</th>
+<th>1000</th>
+<th>1030</th>
+<th>1100</th>
+<th>1130</th>
+<th>1200</th>
+<th>1230</th>
+<th>1300</th>
+<th>1330</th>
+<th>1430</th>
+<th>1530</th>
+<th>1600</th>
+<th>1630</th>
+<th>1700</th>
+<th>1730</th>
+<th>1800</th>
+<th>1830</th>
+<th>1900</th>
+<th>1930</th>
+<th>2000</th>
+<th>2030</th>
+<th>2100</th>
+<th>2130</th>
+<th>2200</th>
+<th>2230</th>
+<th>2300</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Sunday</td>
+<td></td>
+<td></td>
+<td>Wakeup</td>
+<td>Breakfast</td>
+<td colspan=5>Homework</td>
+<td colspan=2 rowspan=7>Lunch</td>
+<td colspan=9>Homework</td>
+<td>dinner</td>
+<td colspan=3>Homework</td>
+<td colspan=2 rowspan=7>family/kids sleep</td>
+<td colspan=2 rowspan=7>Homework</td>
+<td colspan=2 rowspan=7>me time/sleep</td>
+</tr>
+
+
+<tr><td>Monday</td>
+<td rowspan=5>Wake-up</td>
+<td colspan=8 rowspan=5>Work</td>
+<td colspan=5 rowspan=5>Work</td>
+<td colspan=4>Homework</td>
+<td>dinner</td>
+<td colspan=3>Homework</td>
+
+</tr>
+
+<tr><td>Tuesday</td>
+<td colspan=2>Homework</td>
+<td colspan=5>class</td>
+<td>dinner</td>
+</tr>
+<tr><td>Wednesday</td>
+<td colspan=4>Homework</td>
+<td>dinner</td>
+<td colspan=3>Homework</td>
+</tr>
+<tr><td>Thursday</td>
+<td colspan=2>Homework</td>
+<td colspan=5>class</td>
+<td>dinner</td>
+</tr>
+<tr><td>Friday</td>
+<td colspan=4>Homework</td>
+<td>dinner</td>
+<td colspan=3>homework</td>
+</tr>
+<tr><td>Saturday</td>
+<td></td>
+<td></td>
+<td>Wakeup</td>
+<td>Breakfast</td>
+<td colspan=5>Homework</td>
+
+<td colspan=9>Homework</td>
+<td>Dinner</td>
+<td colspan=3>Homework</td>
+</tr>
+</tbody>
+<tfoot>
+
+<tr><td colspan=15>All times are Mountain Standard Time</td>
+<td colspan=16 align="right">Hope for classes with less homework.</td>
+</tr>
+</tfoot>
+
+</table>
+<h1>Register for WEB 2350</h1>
+<form action="http://www.tipjar.com/cgi-bin/test" method="post">
+<div id="form">
+   <fieldset>
+      <legend style="color:blue;font-weight:bold;">Personal Details</legend>
+      <table>
+         <tr>
+            <td>First Name:</td>
+            <td><input type="text" id="fname" name="fname" placeholder="First Name" autofocus></td>
+         </tr>
+         <tr>
+            <td>Last Name:</td>
+            <td><input type="text" id="lname" name="lname" placeholder="Last Name"></td>
+         </tr>
+				 <tr>
+            <td>Date of Birth:</td>
+            <td><input type="date" id="DOB" name="DOB"></td>
+         </tr>
+				 	<tr>
+            <td>E-mail:</td>
+            <td><input type="email" id="email" name="email" placeholder="test@test.com"></td>
+         </tr>
+				 <tr>
+            <td>URL:</td>
+            <td><input type="url" name="url" id="url" placeholder="https://www.IAMAwesome.com"></td>
+         </tr>
+				 <tr>
+            <td>Phone:</td>
+            <td><input type="tel" name="tel" id="tel" placeholder="xxx-xxx-xxxx"></td>
+         </tr>
+				 <tr>
+            <td>Shoe Size:</td>
+            <td><input type="number" min="5" max="18"  value="9" step=".5" id="shoesize" name="shoesize"></td>
+         </tr>
+      </table>
+   </fieldset>
+	 
+	    <fieldset>
+      <legend style="color:blue;font-weight:bold;">Billing Address</legend>
+      <table>
+         <tr>
+            <td>Address:</td>
+            <td><textarea rows="5" name="address" form="usrform" id="address" required></textarea></td>
+         </tr>
+				 <tr>
+            <td>Country:</td>
+            <td> <input list="counties" name="contry" id="contry">
+
+<datalist id="counties">
+  <option value="USA">
+  <option value="Canada">
+  <option value="Mexico">
+
+</datalist></td>
+         </tr>
+
+      </table>
+   </fieldset>
+	 <fieldset>
+      <legend style="color:blue;font-weight:bold;">Card Details</legend>
+      <table>
+         <tr>
+            <td colspan=2>
+						
+							 <fieldset>
+      <legend style="color:blue;font-weight:bold;">Card Type</legend>
+      <table>
+         <tr>
+            <td>  <input type="radio" name="card" id="card" value="VISA" checked> VISA
+  <input type="radio" name="card" value="Mastercard"> Mastercard
+  <input type="radio" name="card" value="AMEX"> AMEX</td>
+         </tr>
+
+
+      </table>
+   </fieldset>		
+						</td></tr>
+						<tr>
+            <td>Name:</td>
+            <td><input type="text" name="cardname" id="cardname" placeholder="As it appears on card"></td>
+         </tr>
+						<tr>
+            <td>Card Number:</td>
+            <td><input type="text" name="cardnumber" id="cardnumber"></td>
+         </tr>
+						<tr>
+            <td>Security Code:</td>
+            <td><input type="password" name="seccode" id="seccode"></td>
+         </tr>
+						<tr>
+            <td>Expire Date:</td>
+            <td><input type="date" name="expire" id="expire"></td>
+         </tr>				 
+      </table>
+   </fieldset>
+	 <input type="hidden" id="hidden" name="hidden" value="This was a complicated assignment">
+</div>
+<input type="submit" id="save" name="save" value="Submit"/>
+ <button type="reset" value="Reset">Reset</button>
+</form>
+
+<!-- If you get this page to validate, remove this comment line
+
+<a href="https://validator.w3.org/nu/?doc=THE FULL URL to THIS PAGE DIRECTLY (like http://icarus.cs.weber.edu/~rf12345/index.html>
+
+<img src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" width="63" height="64" alt="HTML5 Powered" title="HTML5 Powered"> </a>
+
+If you get this page to validate, remove this comment line -->
+
+
+</body>
+
+</html>
