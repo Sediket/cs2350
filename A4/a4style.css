@@ -1,24 +1,26 @@
+/* change the body background color to black and text color to a light blue */
 body {
  background-color:black;
  color:#80c0c0;
 }
-
+/* change all links to red with a background of yellow without underlines */
 a {
     color: red;
 		background-color:yellow;
 		text-decoration: none;
 }
 
-
+/* change already visited links to green */
 a:visited {
     color:#00ff00;
 }
 
-
+/* change active clicking links to a reddish color  */
 a:active {
  color:#a05050;
 }
-
+/* change items in the header class font-family, all caps, borderded
+with a yellow dashed border and a blue background */
 .header {
  font-family:"Times New Roman", Georgia, Serif, corier;
  font-variant: small-caps;
@@ -27,7 +29,9 @@ a:active {
  text-align:center;
  text-transform: uppercase;
 }
-
+/* change this calss to red, 200% larger, a 5px red border, centered
+uppercase, 25px margin on all sides except a 2px margin on the botton,
+use a repeated background image, and a background color of grey*/
 .advertisement {
  color:red;
  font-size:200%;
@@ -43,55 +47,58 @@ a:active {
  background-color:grey;
  
 }
-
+/* chance background color to purple */
 .special {
 background-color:purple;
 
 }
-
+/* chance color to a yellowish collor with a larger font  */
 .sponsor {
 color:#808000;
 font-size:xx-large;
 }
-
+/* change the second ul child li to lager font with italics */
 ul ul li {
 font-size:x-large;
 font-style: italic;
 }
-
+/* change ems in h2s to a font weight of 500 */
 h2 em {
 font-weight:500;
 
 }
-
+/* chance the class pun in the h2 tag to white line height of 50px and size to 40px */
 h2.pun {
 color:white; /* This type of heading MUST be White and Large! */
 line-height:50px;
 font-size:40px;
 }
-
+/* change this id to add padding all around of 20px and a border, groved, white
+with a thickness of 20px */
 #author {
 padding:20px;
 border:20px groove white;
 }
-
+/* change aruther class and assignment id to font-family comic sans and fantasy */
 .author, #assignment {
 font-family:'comic sans ms', fantasy;
 }
-
+/* change all block quotes to have a left margine of 40 px and a green color */
 blockquote {
 margin-left:40px;
 color:#00ff00;
 }
-
+/* change h6 tags to be red and !important */
 h6 {
 background-color:red !important;
 
+/* have all h1 and h2 and blockquotes to have a bluish background  */
 }
 h1, h2, blockquote {
 background-color: #000080;
 }
-
+/* change the first line in the class pun under divs to be bold uppercase navy color and
+a background of aqua */
 div.pun::first-line {
 font-weight:bold;
  text-transform: uppercase;
@@ -99,6 +106,8 @@ font-weight:bold;
  color:navy;
  
 }
+
+/* change the first letter of the class pun in h2s to 200% size and yellow */
 h2.pun::first-letter {
 font-size:200%;
 color:yellow;
