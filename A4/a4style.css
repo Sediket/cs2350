@@ -99,7 +99,7 @@ font-weight:bold;
  color:navy;
  
 }
-.pun::first-letter {
+h2.pun::first-letter {
 font-size:200%;
 color:yellow;
 }
