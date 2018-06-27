@@ -83,7 +83,7 @@ min-height: 500px;
   #section2 {padding-top:50px;padding-bottom: 50px;color: black; background-color:#245685;}
   #section3 {padding-top:50px;padding-bottom: 50px;color: black;
     background: url("../images/binary-code.jpg") no-repeat center center fixed;
-    background-color: #ff9800;
+     background-color:#245685;
     display:table;
     position: relative;
     width: 100%;
@@ -92,7 +92,7 @@ min-height: 500px;
   #section4 {padding-top:50px;padding-bottom: 50px;color: black;  background-color:#245685;}
   #section5 {color: black;
     background: url("../images/study.gif") no-repeat center center fixed;
-    background-color: #ff9800;
+     background-color:#245685;
     display:table;
     /*Align vertically*/
     padding: 150px 0;
