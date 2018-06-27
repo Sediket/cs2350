@@ -1,5 +1,5 @@
 	/*
-  
+
    Wildcat Computer Science
    Author: Bradley Peatross
    Date:   June 11, 2018
@@ -9,17 +9,16 @@
 
 */
 
-		body { 
+		body {
 			margin: 0;
 			font: normal 12px/18px 'Helvetica', Arial, sans-serif;
 			background-color:#737373;
-
 		}
-		
+
 		/* Positioning Rules */
-		
+
 		div#container {
-		
+
 	  width:900px;
 		margin: 0 auto;
 
@@ -30,21 +29,21 @@
 		padding: 20px 250px 60px 20px;
 		background-color:#e6e6e6;
 		}
-		
+
 		div#nav {
 		height:80px;
 		background-color:#ffffff;
 		padding-top:20px;
 		padding-bottom:20px;
 		}
-		
+
 		div#logo {
 		position:relative;
 		float:right;
 		top:-70px;
 		right:20px;
 		}
-		
+
 		div#callout {
 		position:absolute;
 		top:100px;
@@ -55,16 +54,16 @@
 		border-top:5px solid #d6d6c2;
 		background-color:#4d004d;
 		}
-		
+
 		div#footer {
 		width:860px;
 		padding: 0px 20px 0px 20px;
 		background-color: #e6e6e6;
 		}
 
-		
+
 		/*Styling*/
-		
+
 		div#nav a {
 		display:block;
 		float:left;
@@ -74,18 +73,18 @@
 		padding: 0px 20px 0px 20px;
 		line-height:50px;
 		border-right:1px solid #91ab3b;
-		
+
 		}
-		
+
 		div#nav a:active {
 		color:#330033;
-		
+
 		}
-		
+
 		div#nav a:hover {
 		background-color:#91ab3b
 		}
-		
+
 		div#nav h1 {
 		padding-left:20px;
 		font-size:250%;
@@ -97,6 +96,3 @@
 		div#callout h2,div#callout h4,div#callout p,div#callout li {
 		color:#ffffff;
 		}
-		
-
-		
