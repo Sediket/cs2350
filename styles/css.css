@@ -1,0 +1,121 @@
+/*
+
+ CSS3 Styles
+ Author: Bradley PEatross
+ Date:   June 23, 2018
+
+
+ Filename:         css.css
+
+*/
+/* for full coverage */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* auto centering */
+.col-centered {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* the table had different font color then the panels */
+table {
+  color: black;
+
+  /* does nothing because of bootstrap, but needed for validation*/
+  background-color: white;
+
+}
+
+/* for the caption on the images */
+.caption-text {
+  background-color: grey;
+  color:black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* adding a rounded bottom to the picture and caption boxes */
+.fam-pic {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+
+/* add transparency and extra space around the sides */
+.panel {
+
+  opacity: 0.85;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+/* for correct sizing and positioning of the image that is mapped */
+img[usemap] {
+  border: none;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  border-radius: 10px;
+}
+
+/* the body and section configuration with the parallax backgrounds,sizing, colors */
+body {
+      position: relative;
+  }
+  #section1 {padding: 50px 15px; color: black;
+    /* does nothing because of bootstrap, but needed for validation*/
+    background-color: white;
+
+    background: url("../images/cloud.jpg") no-repeat center center fixed;
+    display:table;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+min-height: 500px;
+  }
+  #section2 {padding-top:50px;padding-bottom: 50px;color: black; background-color:#245685;}
+  #section3 {padding-top:50px;padding-bottom: 50px;color: black;
+    background: url("../images/binary-code.jpg") no-repeat center center fixed;
+    background-color: #ff9800;
+    display:table;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+  #section4 {padding-top:50px;padding-bottom: 50px;color: black;  background-color:#245685;}
+  #section5 {color: black;
+    background: url("../images/study.gif") no-repeat center center fixed;
+    background-color: #ff9800;
+    display:table;
+    /*Align vertically*/
+    padding: 150px 0;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    min-height: 600px;
+  }
+  #section6 {padding-top:50px;padding-bottom: 50px;color: black;  background-color:#245685;
+    min-height: 400px;
+  }
+  /*footer*/
+  #footer {padding-top:25px;padding-bottom: 25px;color: rgb(105, 152, 116);  background-color:rgb(50, 73, 67);
+    min-height: 150px;
+  }
+
+/* for the print page */
+  @media print {
+    body {
+      color:#000;
+      background: #fff;
+    }
+    .fam-pic {
+      display:none;
+    }
+  }
