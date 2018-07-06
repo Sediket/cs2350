@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+
+<!--
+
+Honor Code: I acknowledge that this code represents my own work: BP Date:  July 6 2018
+
+-->
+
+<meta charset="utf-8" />
+
+<meta name="description" content="Math App" />
+
+<meta name="keywords" content="JS,Math" />
+
+<meta name="author" content="Bradley Peatross" />
+
+<title>Math App</title>
+
+<script>
+//global result
+var result;
+//question number counter
+var queNumber = 0;
+
+//For the name prompt
+function namePrompt() {
+  //prompt, store result in name
+  var name = prompt("Please enter your name:")
+  //log to console
+  console.log("Welcome "+name+ " hope you enjoy my site :D");
+}
+
+//function for addition from button
+function generateAddition() {
+  //increment queNumber
+  queNumber++;
+  //local vars
+  var var1,var2;
+  //random numbers 0-10
+  var1 = Math.floor(Math.random() * 10);
+  var2 = Math.floor(Math.random() * 10);
+  //prompt user for math problem
+  var resp = prompt("What is "+var1+" + "+var2+ "?");
+  //calculate result
+  result = var1+var2;
+  //check if the user got the right answer and log response
+  if (resp == result) {
+    console.log("Question: "+ queNumber +" You got the right answer for:"+var1+" + "+var2+" which is " +result);
+  } else {
+    console.log("Question: "+ queNumber +" You got the wrong answer for:"+var1+" + "+var2+" which is " +result+ " you entered:"+resp);
+  }
+}
+//function for subtraction from button
+function generateSub(){
+  //increment queNumber
+  queNumber++;
+  //local vars
+  var var1,var2;
+  //random numbers 0-10
+  var1 = Math.floor(Math.random() * 10);
+  var2 = Math.floor(Math.random() * 10);
+  //prompt user to answer
+  var resp = prompt("What is "+var1+" - "+var2+ "?");
+  //calculate result
+  result = var1-var2;
+
+
+  //check if the user got the right answer and log response
+  if (resp == result) {
+    console.log("Question: "+ queNumber +" You got the right answer for:"+var1+" - "+var2+" which is " +result);
+  } else {
+    console.log("Question: "+ queNumber +" You got the wrong answer for:"+var1+" - "+var2+" which is " +result+ " you entered:"+resp);
+  }
+}
+
+//function for multiplication from button
+function generateMult(){
+  //increment queNumber
+  queNumber++;
+  //local vars
+  var var1,var2;
+  //generate randoms 0-10
+  var1 = Math.floor(Math.random() * 10);
+  var2 = Math.floor(Math.random() * 10);
+  //prompt user for math question
+  var resp = prompt("What is "+var1+" * "+var2+ "?");
+  //calculate result
+  result = var1*var2;
+
+  //check if the user got the right answer and log response
+  if (resp == result) {
+    console.log("Question: "+ queNumber +" You got the right answer for:"+var1+" * "+var2+" which is " +result);
+  } else {
+    console.log("Question: "+ queNumber +" You got the wrong answer for:"+var1+" * "+var2+" which is " +result+ " you entered:"+resp);
+  }
+}
+// function for division from button
+function generateDiv() {
+  //increment queNumber
+  queNumber++;
+  //local vars
+  var var1,var2;
+  //assign random 0-100
+  var1 = Math.floor(Math.random() * 100);
+  //assign random 2-50 that is divisiable by var1
+  do{var2 = Math.floor(Math.random() * 48)+2;} while (var1%var2 != 0)
+
+  //prompt user for math problem
+  var resp = prompt("What is "+var1+" / "+var2+ "?");
+  //calculate result
+  result = var1/var2;
+
+  //check if the user got the right answer and log response
+  if (resp == result) {
+    console.log("Question: "+ queNumber +" You got the right answer for:"+var1+" / "+var2+" which is " +result);
+  } else {
+    console.log("Question: "+ queNumber +" You got the wrong answer for:"+var1+" / "+var2+" which is " +result+ " you entered:"+resp);
+  }
+}
+
+</script>
+
+</head>
+
+<body onload="namePrompt()">
+  <input type="button" value="+" onclick="generateAddition()">
+  <input type="button" value="-" onclick="generateSub()">
+  <input type="button" value="*" onclick="generateMult()">
+  <input type="button" value="/" onclick="generateDiv()">
+</body>
+
+</html>
