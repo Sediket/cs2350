@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+
+<!--
+
+Honor Code: I acknowledge that this code represents my own work: BP Date:  July 13 2018
+
+-->
+
+<meta charset="utf-8" />
+
+<meta name="description" content="Math App" />
+
+<meta name="keywords" content="JS,loop,innerHTML" />
+
+<meta name="author" content="Bradley Peatross" />
+
+<title>InnerHTML Loop Demo</title>
+
+<style>
+.diff {
+  background-color: rgb(103, 172, 127);
+}
+td {
+  border: 1px solid black;
+}
+
+</style>
+
+<script>
+//onload function to start
+function start() {
+do {
+  //prompt for input
+var response = prompt("Please enter in a positive number.");
+//input validation
+}while (isNaN(response) || (response < 1));
+
+//loop for however many times
+for (var i = 1;i < parseInt(response)+1;i++)
+{
+  //ever other one format different
+  if (i%2 != 0) {
+    document.getElementById("rows").innerHTML += "<tr><td>ROW #"+i+"</td></tr>"
+  } else {
+    document.getElementById("rows").innerHTML += "<tr><td class='diff'>ROW #"+i+"</td></tr>"
+  }
+}
+}
+</script>
+
+</head>
+<body onload="start()">
+
+<table id="rows">
+
+</table>
+<ul>
+<li><a href="jsLoopDemo.html">jsLoopDemo</a></li>
+<li><a href="jsTimeDemo.html">jsTimeDemo</a></li>
+<li><a href="cashRegister.html">cashRegister</a></li>
+</ul>
+
+</body>
+</html>

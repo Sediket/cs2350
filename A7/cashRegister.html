@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+
+<!--
+
+Honor Code: I acknowledge that this code represents my own work: BP Date:  July 13 2018
+
+-->
+
+<meta charset="utf-8" />
+
+<meta name="description" content="Cash Register" />
+
+<meta name="keywords" content="JS,Math" />
+
+<meta name="author" content="Bradley Peatross" />
+
+<title>Cash Register</title>
+
+<script>
+//constant for tax amount
+const tax = 0.06;
+
+//function to call from button
+function start()
+{
+  //make cart with items
+  var shCart = {
+    bike: "899.39",
+    tent: "500.99",
+    boots: "98.99",
+    trailmix: "5.90",
+    coat: "300.99",
+    knife: "100.99"
+  };
+  //get total from cashRegister
+  var total = cashRegister(shCart);
+  //get tax amount from total
+taxAmount = total * tax;
+//display message
+  alert("Cart total is $"+total.toFixed(2)+" plus $"+taxAmount.toFixed(2)+" tax.");
+}
+
+//cashRegister function
+function cashRegister(cart){
+
+//initilize total
+  var total = 0;
+  //loop through the cart
+  for (var item in cart){
+    //add all the items prices
+    total += parseFloat(cart[item]);
+  }
+  //return total
+  return total;
+}
+
+</script>
+
+</head>
+<body>
+<input type="button" value="Check Out" onclick="start()">
+<ul>
+<li><a href="jsLoopDemo.html">jsLoopDemo</a></li>
+<li><a href="jsTimeDemo.html">jsTimeDemo</a></li>
+<li><a href="cashRegister.html">cashRegister</a></li>
+</ul>
+</div>
+</body>
+</html>

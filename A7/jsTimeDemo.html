@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+
+<!--
+
+Honor Code: I acknowledge that this code represents my own work: BP Date:  July 13 2018
+
+-->
+
+<meta charset="utf-8" />
+
+<meta name="description" content="Math App" />
+
+<meta name="keywords" content="JS,date" />
+
+<meta name="author" content="Bradley Peatross" />
+
+<title>Date Demo</title>
+
+<script>
+
+function currentDate() {
+  //get the current time/date
+  var d = new Date();
+  //get if its AM or PM
+  var amPM = (d.getHours() > 12) ? "PM" : "AM";
+  //get hours in non military format
+  var hours = (d.getHours() > 12) ? d.getHours() - 12 : d.getHours();
+  //get the right message for time of day
+  var message = (d.getHours() < 12) ? "morning" : ((d.getHours() > 12 && d.getHours() < 18 ) ? "afternoon" : "evening");
+  //get leading 0 for under 10 min
+  var mins = (d.getMinutes() < 10) ? "0"+d.getMinutes() : d.getMinutes();
+  //array for month names
+  var month = ["Janurary","February","March","April","May","June","July","August","September","October","November","December"];
+  //array for days of the week names
+  var dayOfWeek = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  //the alert message
+  alert("Good "+message+", it is "+hours+":"+mins+
+  " "+amPM +" on "+dayOfWeek[d.getDay()]+", "
+  +month[d.getMonth()]+" "+d.getDate()+", "+d.getFullYear());
+}
+
+</script>
+
+</head>
+<body>
+<input type="button" value="Clicky, for date." onclick="currentDate()">
+<ul>
+<li><a href="jsLoopDemo.html">jsLoopDemo</a></li>
+<li><a href="jsTimeDemo.html">jsTimeDemo</a></li>
+<li><a href="cashRegister.html">cashRegister</a></li>
+</ul>
+</body>
+
+
+</html>
