@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+
+   A8: Congressional Race Results
+   Author: Bradley Peatross
+   Plagarism Acknowledgment:  BP
+   Date: July 20, 2018
+
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="Vote Page" />
+<meta name="keywords" content="html,css,javascript,vote" />
+<title>Congressional Races</title>
+<link href="results.css" rel="stylesheet" type="text/css" />
+<script src="votes.js"></script>
+<script>
+
+function totalVotes(votes) {
+  var total = 0;
+  votes.forEach(function(item){
+    console.log(item);
+    total += item;
+  })
+  return total;
+}
+
+function calcPercent(item, sum) {
+  return Math.round(item / sum * 100);
+}
+
+function createBar(partyType, percent) {
+
+  var barText = "";
+  switch(partyType) {
+    case 'D':
+    barText = "<td class='dem'> </td>";
+    break;
+    case 'R':
+    barText = "<td class='rep'> </td>";
+    break;
+    case 'I':
+    barText = "<td class='ind'> </td>";
+    break;
+    case 'G':
+    barText = "<td class='green'> </td>";
+    break;
+    case 'L':
+    barText = "<td class='lib'> </td>";
+    break;
+  }
+  for (var i = 0;i < percent;i++){
+    document.writeln(barText);
+  }
+}
+// race - string name of race
+// name - array of candidate names
+// party - array of party affliations
+// votes - array of votes
+function showResults(race, name, party, votes) {
+  var totalV = totalVotes(votes);
+  document.writeln(
+"<h2>"+race+"</h2>"+
+"<table>"+
+"<tr>"+
+"<th>Candidate</th>"+
+"<th class='num'>Votes</th>"+
+"<th class='num'>%</th>"+
+"</tr>"
+);
+  for (var i = 0;i < name.length;i++){
+    //document.writeln(i);
+    var percent = calcPercent(votes[i],totalV);
+    document.writeln(
+      "<tr>"+
+      "<td>"+name[i]+"</td>"+
+      "<td class='num'>"+votes[i]+"</td>"+
+      "<td class='num'>("+percent+")%</td>"
+    );
+
+    createBar(party[i],percent);
+    document.writeln("</tr>");
+
+  }
+  document.writeln("</table>");
+}
+
+</script>
+
+</head>
+
+<body>
+
+   <div id="intro">
+      <p><img src="logo.jpg" alt="Election Day Results" /></p>
+      <a href="#">Election Home Page</a>
+      <a href="#">President</a>
+      <a href="#">Senate Races</a>
+      <a href="#">Congressional Races</a>
+      <a href="#">State Senate</a>
+      <a href="#">State House</a>
+      <a href="#">Local Races</a>
+      <a href="#">Judicial</a>
+      <a href="#">Referendums</a>
+   </div>
+
+   <div id="results">
+      <h1>Congressional Races</h1>
+      <script>
+        showResults(race[0],name1,party1,votes1)
+        showResults(race[1],name2,party2,votes2)
+        showResults(race[2],name3,party3,votes3)
+        showResults(race[3],name4,party4,votes4)
+        showResults(race[4],name5,party5,votes5)
+      </script>
+
+   </div>
+
+</body>
+</html>
