@@ -1,0 +1,225 @@
+/*
+
+ CSS3 Styles
+ Author: Bradley PEatross
+ Date:   August 4, 2018
+
+ Filename:         a10.css
+
+*/
+
+/*Accordion Headers*/
+.headers {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+/*Accordion header hovers*/
+.headers:hover {
+    background-color: #ccc;
+}
+/*Sidnav styles*/
+.sidenav {
+  width: 18%;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  cursor: pointer;
+  border: 1px solid grey;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+/*Sidenav anchor*/
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #444;
+  display: block;
+}
+/*sidnav anchor hover*/
+.sidenav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/*sidenav anchor active*/
+.sidenav a.active {
+  background-color: rgb(50, 60, 50);
+  color: white;
+}
+/*body*/
+body {
+  margin:10px 0px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*main content*/
+.content {
+  margin-left: 20%;
+  margin-top:auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  width: 70%;
+  border: 1px solid grey;
+  padding: 10px;
+}
+/*accordion sections*/
+.overview {color: black;
+  /* does nothing because of bootstrap, but needed for validation*/
+  background-color: white;
+  background: url("../images/cloud.jpg") no-repeat center center fixed;
+  display:table;
+  position: relative;
+
+  background-size: cover;
+min-height: 300px;
+}
+.family {}
+.work {padding: 50px 15px; color: black;
+  background: url("../images/binary-code.jpg") no-repeat center center fixed;
+   background-color:#245685;
+  display:table;
+
+  position: relative;
+
+  background-size: cover;
+}
+.hobbies {}
+.assignments {color: black;
+  background: url("../images/study.gif") no-repeat center center fixed;
+   background-color:#245685;
+  display:table;
+  /*Align vertically*/
+width:100%;
+box-sizing: border-box;
+  position: relative;
+
+  background-size: cover;
+  min-height: 400px;
+}
+#section6 {padding-top:50px;padding-bottom: 50px;color: black;  background-color:#245685;
+  min-height: 300px;
+}
+/*footer*/
+#footer {padding-top:25px;padding-bottom: 25px;color: rgb(105, 152, 116);  background-color:rgb(50, 73, 67);
+  min-height: 150px;
+}
+/*panels in the sections*/
+.panel {
+  opacity: 0.85;
+  background-color: rgb(239, 241, 254);
+  padding:3%;
+}
+
+/*-------------------------------------------------*/
+/*Form classes*/
+.form-group{
+    max-width: 450px;
+    background: #FAFAFA;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #305A72;
+
+}
+.form-group ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+
+}
+.form-group ul li{
+    display: block;
+    margin-bottom: 10px;
+    min-height: 35px;
+}
+.form-group ul li  .field-style{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 8px;
+    outline: none;
+    border: 1px solid #B0CFE0;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+
+}.form-group ul li  .field-style:focus{
+    box-shadow: 0 0 5px #B0CFE0;
+    border:1px solid #B0CFE0;
+}
+.form-group ul li .field-split{
+    width: 49%;
+}
+.form-group ul li .field-full{
+    width: 100%;
+}
+.form-group ul li input.align-left{
+    float:left;
+}
+.form-group ul li input.align-right{
+    float:right;
+}
+.form-group ul li textarea{
+    width: 200px;
+    height: 100px;
+
+}
+.form-group ul li input[type="button"],
+.form-group ul li input[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    box-shadow: inset 0px 1px 0px 0px #3985B1;
+    background-color: #216288;
+    border: 1px solid #17445E;
+    display: inline-block;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 8px 18px;
+    text-decoration: none;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+.form-group ul li input[type="button"]:hover,
+.form-group ul li input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+    background-color: #28739E;
+}
+/*end form classes*/
+/*-------------------------------------------------*/
+
+/* for the caption on the images in family and shadow */
+.caption-text {
+  background-color: grey;
+  color:black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* adding a rounded bottom to the picture and caption boxes in family and shadow */
+.fam-pic {
+  width:235px;
+  height:150px;
+  float:left;
+  box-sizing: border-box;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin:10px;
+
+}
+/*img map in family*/
+img[usemap] {
+  border: none;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  border-radius: 10px;
+}

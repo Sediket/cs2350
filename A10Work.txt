@@ -1,0 +1,13 @@
+Jquery:
+1. Accordion for main content.
+2. Jquery used everywhere for selectors.
+3. Jquery foreach used on arrays of elements that share the same class.
+4. Jquery draggable content added for main content and navbar.
+5. Jquery foreach,custom accordion classes, selectors used to update navbar and accordion headers to reflect active selected section in both the main content and the navbar.
+6. Jquery autocomplete added to the form for favorite sport.
+7. Jquery datepicker added to the form.
+8. Jquery buttons added.
+9. Jquery explode added when selected "I don't want to" in the form.
+10. Jquery blur added to form.
+11. Jquery progress bar added to the form and updated with blur event.
+
