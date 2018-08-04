@@ -71,10 +71,8 @@ body {
   #section1 {padding: 50px 15px; color: black;
     /* does nothing because of bootstrap, but needed for validation*/
     background-color: white;
-
     background: url("../images/cloud.jpg") no-repeat center center fixed;
     display:table;
-    margin-top: 50px;
     position: relative;
     width: 100%;
     background-size: cover;
