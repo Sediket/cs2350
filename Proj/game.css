@@ -1,0 +1,64 @@
+body{
+  background-color: rgb(204, 209, 250);
+  margin:0;
+}
+
+.conent {
+  width:750px;
+  margin:auto;
+}
+
+.playerArea{
+  background-color: rgb(155, 247, 211);
+  height:250px;
+}
+
+.playerMessage{
+  text-align: center;
+  font-size: 25px;
+}
+
+.playerPitcuresDiv{
+  display:flex;
+  justify-content: space-between;
+}
+
+.playerPitcures {
+  width: 150px;
+  height:200px;
+}
+
+.resultArea{
+  text-align: center;
+
+}
+
+.roundSpan {
+  float: left;
+  font-size: 20px;
+}
+
+.scoreSpan{
+  float:right;
+  font-size: 20px;
+}
+
+.computerArea{
+  background-color: rgb(255, 187, 187);
+  height:250px;
+}
+
+.computerPicturesDiv{
+  display:flex;
+  justify-content: space-between;
+}
+
+.computerPitcures {
+  width: 150px;
+  height:200px;
+}
+
+.computerMessage {
+  text-align: center;
+  font-size: 25px;
+}
