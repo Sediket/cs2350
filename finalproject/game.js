@@ -525,6 +525,7 @@ $('.computerMessage').text('TIE!')
 //picture is clicked from normal game==========================================
 function choiceMade() {
 
+
   //round count
   if (round == 0){
     //change text of try again button to normal game
@@ -544,7 +545,6 @@ function choiceMade() {
     $('.roundSpan').text("Game Over, It's a tie!");
 
   }
-
 //get ready to start over=======================
 //make buttons visible Again
 $('button').each(function(i, obj){
@@ -552,7 +552,7 @@ $('button').each(function(i, obj){
 });
 
 
-round = 4;
+round = 3;
 return;
   } else {
     $('.roundSpan').text('Round: '+round);
@@ -653,4 +653,5 @@ if (round == 0){
 
 }
 round--;
+if (round == 0){choiceMade();}
 } // choice made /function
