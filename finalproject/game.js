@@ -92,7 +92,7 @@ nIntervId2 = setInterval(function(){timer++;
   //show instructions in player message
   $('.playerMessage').text(timer+" Beat the Computer's sequence");
 }, 1000);
-
+round = 0;
 seq = [];
 counter = 0;
 
@@ -264,6 +264,7 @@ $('.best').text('Best Time:'+bestTime+' Best Score:'+option2HighScore);
 clearInterval(nIntervId2);
 timer = 0;
 playerScore = 0;
+round = 3;
 //seq = [];
 //remove click events from player pictures
 $('.playerPitcures').each(function(i, obj){
